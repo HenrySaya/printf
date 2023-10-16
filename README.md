@@ -25,7 +25,7 @@ int _printf(const char *format, ...);
 Return Value
 The number of characters printed (excluding the null byte used to end output to strings).
 Link to Pseudocode
-View Pseudocode
+https://docs.google.com/document/d/1h-82yn05l-4h-55BSlQYgeyBTT4Oi0xCEXmtoZZf7Pk/edit?usp=sharing
 
 Flowchart
-View Flowchart
+https://drive.google.com/file/d/1Ml-5gRqJdQqnNCkyEGFbfomFAvDn5vZD/view?usp=sharing
