@@ -10,13 +10,22 @@ int _printf(const char *format, ...)
 	int count;
 	va_list ap;
 
+	if (format == NULL)
+		return (-1);
+
 	va_start(ap, format);
 	count = 0;
 
-	while (*format != '\0')
+	while (*format)
 	{
 		if (*format == '%')
-			count += print_format(*(++format), ap);
+		{
+			format++;
+			if (*format == '\0')
+				break;
+
+			count += print_format(*format, ap);
+		}
 		else
 			count += write(1, format, 1);
 

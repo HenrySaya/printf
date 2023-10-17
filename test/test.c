@@ -1,10 +1,16 @@
-#include "main.h"
+#include "../main.h"
 #include <stdio.h>
 
 int main(void)
 {
-	printf("Character :%c\n", 'R');
-	_printf("Character :%c\n", 'F');
+	int count;
+	int len;
+
+	len = printf("Character :%c\n", 'R');
+	count = _printf("Character :%c\n", 'F');
+
+	printf("Length: [%d]\n", len);
+	_printf("Length: [%d]\n", count);
 
 	printf("String: %s\n", "Real print");
 	_printf("String: %s\n", "fake print");
