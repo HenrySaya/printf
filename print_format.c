@@ -10,7 +10,7 @@
 int print_format(char specifier, va_list ap)
 {
 	int count = 0;
-	
+
 	if (specifier == 'c')
 		count += print_char(va_arg(ap, int));
 	else if (specifier == 's')
