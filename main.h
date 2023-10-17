@@ -12,5 +12,5 @@ int print_string(char *str);
 int print_binary(unsigned int num);
 int _putchar(char c);
 int print_digit(int num);
-
+int print_digspecial(unsigned int num, char specifier);
 #endif

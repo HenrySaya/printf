@@ -1,8 +1,11 @@
 #include "main.h"
 /**
- * print_digit - function to handle specifier d and x
+ * print_digit - function to print integers
+ *
+ * @num: integer value to be printed
+ * Return: return the count
  */
-int print_digit(int num) 
+int print_digit(int num)
 {
 	int count = 0;
 
@@ -18,12 +21,12 @@ int print_digit(int num)
 		_putchar('0');
 		count++;
 	}
-	else 
+	else
 	{
 		char buffer[10];
 		int i = 0;
 
-		while (num > 0) 
+		while (num > 0)
 		{
 			buffer[i++] = num % 10 + '0';
 			num /= 10;
@@ -34,7 +37,6 @@ int print_digit(int num)
 			_putchar(buffer[--i]);
 			count++;
 		}
-    	}
-    
-    	return (count);
+	}
+	return (count);
 }
