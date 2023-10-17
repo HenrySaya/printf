@@ -17,6 +17,8 @@ int print_format(char specifier, va_list ap)
 		count += print_string(va_arg(ap, char *));
 	else if (specifier == '%')
 		count += write(1, &specifier, 1);
+	else if (specifier == 'd' || specifier == 'i')
+		count += print_digit(va_arg(ap, int));
 	else if (specifier == 'b')
 		count += print_binary(va_arg(ap, unsigned int));
 	return (count);

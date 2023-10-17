@@ -31,3 +31,6 @@ Flowchart
 https://drive.google.com/file/d/1Ml-5gRqJdQqnNCkyEGFbfomFAvDn5vZD/view?usp=sharing
 ## print_binary.c
 THe print_binary.c file is responsible for converting an integer in decimal value(base 10) to its equivalent binary value(base 2)
+
+## print_digit.c
+The print_digit.c is responsible for displaying the integers whether positive or negative to the standard output
