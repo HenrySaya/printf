@@ -34,3 +34,6 @@ THe print_binary.c file is responsible for converting an integer in decimal valu
 
 ## print_digit.c
 The print_digit.c is responsible for displaying the integers whether positive or negative to the standard output
+
+## peint_digspecial.c
+This is a file that handles the 'o', 'x', 'X' and 'u' specifiers

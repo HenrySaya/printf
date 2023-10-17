@@ -3,7 +3,8 @@
  * print_binary - function to convert integer to binary equivalent
  *
  * @num: integer to be converted
- * Return: Always 0
+ * Return: retun 0 always
+ * 
  */
 int print_binary(unsigned int num)
 {

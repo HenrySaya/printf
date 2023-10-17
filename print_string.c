@@ -12,8 +12,8 @@ int print_string(char *str)
 	while (*str)
 	{
 		print_char((int) *str);
-		++count;
-		++str;
+		count++;
+		str++;
 	}
 	return (count);
 }
