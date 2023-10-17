@@ -8,7 +8,7 @@ main.h: Contains function prototypes for the printf project.
 format.c: Handles conversion specifiers in the format string.
 ## main.h - Function Prototypes
 Description
-Create the main header file main.h which will contain all the function prototypes needed for the printf project.
+The main header file main.h which will contain all the function prototypes needed for the printf project.
 
 Prototype
 
