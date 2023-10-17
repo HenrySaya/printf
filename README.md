@@ -29,3 +29,5 @@ https://docs.google.com/document/d/1h-82yn05l-4h-55BSlQYgeyBTT4Oi0xCEXmtoZZf7Pk/
 
 Flowchart
 https://drive.google.com/file/d/1Ml-5gRqJdQqnNCkyEGFbfomFAvDn5vZD/view?usp=sharing
+## print_binary.c
+THe print_binary.c file is responsible for converting an integer in decimal value(base 10) to its equivalent binary value(base 2)

@@ -15,8 +15,10 @@ int main(void)
 	printf("String: %s\n", "Real print");
 	_printf("String: %s\n", "fake print");
 
-	printf("100%%");
-	_printf("100%%");
+	printf("100%%\n");
+	_printf("100%%\n");
+
+	_printf("%b\n", 98);
 
 	return (0);
 }
