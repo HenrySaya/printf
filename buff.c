@@ -9,12 +9,12 @@ int print_format(char specifier, va_list ap);
  */
 int _printf(const char *format, ...)
 {
-	if (format == NULL)
-		return (-1);
-
 	char b[BUFF_SIZE];
 	int ind = 0;
 	int ch = 0;
+
+	if (format == NULL)
+		return (-1);
 
 	va_list args;
 
@@ -65,7 +65,7 @@ int print_format(char specifier, va_list ap)
 	else if (specifier == 'b')
 		count += print_binary(va_arg(ap, unsigned int));
 	return (count);
-}
+
 	print_buffer(b, &ind)
 	return (ch);
-	}
+}
