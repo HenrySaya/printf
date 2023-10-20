@@ -14,7 +14,10 @@ int _printf(const char *format, ...)
 	count = 0;
 
 	if (format == NULL)
+	{
+		write(1, "Error: format string is NULL\n", 29);
 		return (-1);
+	}
 
 	while (*format)
 	{
