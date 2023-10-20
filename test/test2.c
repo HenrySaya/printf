@@ -3,8 +3,7 @@
 
 int main(void)
 {
-    /* tests for task 0
-    int len, len2;
+    /* tests for task 0*/
     _printf("%c\n", 'S');
     printf("%c\n", 'S');
     _printf("A char inside a sentence: %c. Did it work?\n", 'F');
@@ -28,14 +27,14 @@ int main(void)
     
     len = _printf("%s\n", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     len2 = printf("%s\n", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-    if (len != len2)
-    {
-        printf("Lengths differ.\n");
-        fflush(stdout);
-        return (1);
-    }*/
 
-    _printf("%");
-    printf("%");
+    printf("%c\n", '\0');
+    _printf("%c\n", '\0');
+    _printf("%\n");
+    printf("%\n");
+    _printf("%!\n");
+    printf("%!\n");
+    _printf("%K\n");
+    printf("%K\n");
     return (0);
 }
