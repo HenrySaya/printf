@@ -27,5 +27,11 @@ int print_format(char specifier, va_list ap)
 		count += print_digspecial(va_arg(ap, unsigned int), specifier);
 	else if (specifier == 'b')
 		count += print_binary(va_arg(ap, unsigned int));
+	else
+	{
+		const char *error_message = "Unknown conversion type character in format\n";
+
+		count += write(2, error_message, strlen(error_message));
+	}
 	return (count);
 }

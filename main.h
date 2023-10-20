@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <limits.h>
+#include <string.h>
 
 #define BUFF_SIZE 1024
 
