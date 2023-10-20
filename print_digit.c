@@ -9,16 +9,21 @@ int print_digit(int num)
 {
 	int count = 0;
 
+	if (num == INT_MIN)
+	{
+		write(1, "-2147483648", 11);
+		return (11);
+	}
 	if (num < 0)
 	{
-		_putchar('-');
+		write(1, "-", 1);
 		num = -num;
 		count++;
 	}
 
 	if (num == 0)
 	{
-		_putchar('0');
+		write(1, "0", 1);
 		count++;
 	}
 	else
@@ -34,7 +39,7 @@ int print_digit(int num)
 
 		while (i > 0)
 		{
-			_putchar(buffer[--i]);
+			write(1, &buffer[--i], 1);
 			count++;
 		}
 	}
